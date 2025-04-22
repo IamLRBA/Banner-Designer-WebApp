@@ -1,10 +1,10 @@
 # Interactive Banner Designer
 
-A responsive web application for creating custom banners with real-time previews, image uploads, and extensive styling options.
+---
+
+This is a responsive web application for creating custom banners with real-time previews, image uploads, and extensive styling options.
 
 ![Banner Designer Screenshot](https://raw.githubusercontent.com/AdelekeVanessa/Frontend-Web-App-for-Interactive-Banner-Design/main/public/Images/Interactive%20Banner%20Image.png)
-
-A responsive web application for creating custom banners with real-time previews, image uploads, and extensive styling options.
 
 ---
 
