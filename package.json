@@ -1,0 +1,37 @@
+{
+    "name": "frontend-web-app-for-interactive-banner-design",
+    "private": true,
+    "version": "0.0.0",
+    "type": "module",
+    "scripts": {
+        "dev": "vite",
+        "build": "vite build",
+        "lint": "eslint .",
+        "preview": "vite preview",
+        "build:css": "tailwindcss -i ./src/index.css -o ./dist/output.css --watch"
+    },
+    "dependencies": {
+        "fabric": "^6.6.1",
+        "framer-motion": "^12.5.0",
+        "react": "^19.0.0",
+        "react-color": "^2.19.3",
+        "react-dom": "^19.0.0",
+        "react-icons": "^5.5.0"
+    },
+    "devDependencies": {
+        "@eslint/js": "^9.21.0",
+        "@tailwindcss/postcss": "^4.0.14",
+        "@tailwindcss/postcss7-compat": "^2.2.17",
+        "@types/react": "^19.0.10",
+        "@types/react-dom": "^19.0.4",
+        "@vitejs/plugin-react-swc": "^3.9.0",
+        "autoprefixer": "^10.4.21",
+        "eslint": "^9.21.0",
+        "eslint-plugin-react-hooks": "^5.1.0",
+        "eslint-plugin-react-refresh": "^0.4.19",
+        "globals": "^15.15.0",
+        "postcss": "^8.5.3",
+        "tailwindcss": "^4.0.14",
+        "vite": "^6.2.0"
+    }
+}
