@@ -168,7 +168,9 @@ Contributions are welcome! Please follow these steps:
 ## Contact
 
 **JERRY LARUBA FESTUS**
+
 Github: [@IamLRBA](https://github.com/IamLRBA)
+
 Email: jerrylarubafestus@gmail.com
 
 🔗 **Project Link**: [Banner Designer WebApp](https://github.com/IamLRBA/Banner-Designer-WebApp)
