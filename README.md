@@ -167,8 +167,8 @@ Contributions are welcome! Please follow these steps:
 
 ## Contact
 
-**Adeleke Vanessa**
-Github: [@AdelekeVanessa](https://github.com/AdelekeVanessa)
-Email: adelekevanessa2@gmail.com
+**Jerry Laruba Festus**
+Github: [@IamLRBA](https://github.com/IamLRBA)
+Email: jerrylarubafestus@gmail.com
 
-🔗 **Project Link**: [Frontend-Web-App-for-Interactive-Banner-Design](https://github.com/AdelekeVanessa/Frontend-Web-App-for-Interactive-Banner-Design)
+🔗 **Project Link**: [Banner Designer WebApp](https://github.com/IamLRBA/Banner-Designer-WebApp)
