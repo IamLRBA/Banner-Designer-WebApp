@@ -167,7 +167,7 @@ Contributions are welcome! Please follow these steps:
 
 ## Contact
 
-**Jerry Laruba Festus**
+**JERRY LARUBA FESTUS**
 Github: [@IamLRBA](https://github.com/IamLRBA)
 Email: jerrylarubafestus@gmail.com
 
