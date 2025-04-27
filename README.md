@@ -10,7 +10,7 @@ The Interactive Banner Designer is a responsive web application built by LRBA fo
 
 ## Features
 
-- **Real-time Design Preview**: See changes instantly as you customize
+- **Real-time Design Preview**: You are able to see changes instantly as you customize
 - **Comprehensive Styling Options**:
   - Background color/image customization
   - Text styling with 40+ font choices
