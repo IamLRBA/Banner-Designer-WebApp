@@ -69,7 +69,7 @@ Frontend-Web-App-for-Interactive-Banner-Design/
 
 ### Installation
 
-1. Clone the repository:
+1. Clone the Banner Designer WebApp repository:
    ```bash
    git clone https://github.com/AdelekeVanessa/Frontend-Web-App-for-Interactive-Banner-Design.git
    ```
