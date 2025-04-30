@@ -573,3 +573,38 @@ import {
           )}
         </div>
       </div>
+
+      {/* Banner Display */}
+      <div
+        className="banner-container"
+        style={{ width: "100%", padding: "0 20px" }}
+      ></div>
+
+      <Banner
+        text={
+          text ||
+          "I love creating at the intersection of code & creativity ✨\nFashion • Sports • Architecture • Automobiles\nMusic • Poetry • Film • Comics • Aesthetics"
+        }
+        bgColor={background}
+        fontSize={24}
+        textColor={textColor}
+        backgroundImage={backgroundImage}
+        activeImages={activeImages}
+        scrollY={0}
+        width={width}
+        height={height}
+        borderRadius={borderRadius}
+        selectedFont={selectedFont}
+        textStyle={textStyle}
+        onImageDrop={handleImageDrop}
+        onImageDelete={handleImageDelete}
+        drawingTool={drawingTool}
+        strokeColor={strokeColor}
+        strokeWeight={strokeWeight}
+        transparency={strokeTransparency}
+      />
+    </div>
+  );
+};
+
+export default InteractiveBanner;
