@@ -77,22 +77,22 @@ import {
           }
         }
       };
-    
+
       const handleTextColorChange = (color) => setTextColor(color.hex);
-    
+
       const activateEyeDropper = () => {
         if (!window.EyeDropper) {
           alert("Your browser does not support the Eye Dropper API.");
           return;
         }
-    
+
         const eyeDropper = new window.EyeDropper();
         eyeDropper
           .open()
           .then((result) => setTextColor(result.sRGBHex))
           .catch(console.error);
       };
-    
+
       const handleRightClick = (index, e) => {
         e.preventDefault();
         if (window.confirm("Delete this image?")) {
@@ -105,23 +105,23 @@ import {
           }
         }
       };
-    
+
       const handleImageDrop = (imageIndex) => {
         setActiveImages([...activeImages, uploads[imageIndex]]);
       };
-    
+
       const handleImageDelete = (index) => {
         const newActiveImages = [...activeImages];
         newActiveImages.splice(index, 1);
         setActiveImages(newActiveImages);
       };
-    
+
       return (
         <div className="interactive-container">
           {/* Sidebar Form */}
           <div className="sidebar">
             <h2>DESIGN FORM</h2>
-    
+
             {/* Background Upload */}
             <div className="tool-section">
               <label>
@@ -133,7 +133,7 @@ import {
                 onChangeComplete={handleBackgroundChange}
               />
             </div>
-    
+
             {/* Uploaded Files */}
             <div className="tool-section">
               <label>
@@ -163,7 +163,7 @@ import {
                 ))}
               </div>
             </div>
-    
+
             {/* Text Customization */}
             <div className="tool-section">
               <label onClick={() => setShowTextOptions(!showTextOptions)}>
@@ -207,4 +207,3 @@ import {
                           : "none",
                     }}
                   />
-    
