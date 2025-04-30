@@ -65,3 +65,146 @@ import {
 
     // Event Handlers
     const handleBackgroundChange = (color) => setBackground(color.hex);
+
+    const handleFileUpload = (event) => {
+        const file = event.target.files[0];
+        if (file) {
+          const newUploads = [...uploads, URL.createObjectURL(file)];
+          setUploads(newUploads);
+          if (currentImageIndex === null) {
+            setCurrentImageIndex(0);
+            setBackgroundImage(URL.createObjectURL(file));
+          }
+        }
+      };
+    
+      const handleTextColorChange = (color) => setTextColor(color.hex);
+    
+      const activateEyeDropper = () => {
+        if (!window.EyeDropper) {
+          alert("Your browser does not support the Eye Dropper API.");
+          return;
+        }
+    
+        const eyeDropper = new window.EyeDropper();
+        eyeDropper
+          .open()
+          .then((result) => setTextColor(result.sRGBHex))
+          .catch(console.error);
+      };
+    
+      const handleRightClick = (index, e) => {
+        e.preventDefault();
+        if (window.confirm("Delete this image?")) {
+          const newUploads = [...uploads];
+          newUploads.splice(index, 1);
+          setUploads(newUploads);
+          if (currentImageIndex === index) {
+            setCurrentImageIndex(null);
+            setBackgroundImage(null);
+          }
+        }
+      };
+    
+      const handleImageDrop = (imageIndex) => {
+        setActiveImages([...activeImages, uploads[imageIndex]]);
+      };
+    
+      const handleImageDelete = (index) => {
+        const newActiveImages = [...activeImages];
+        newActiveImages.splice(index, 1);
+        setActiveImages(newActiveImages);
+      };
+    
+      return (
+        <div className="interactive-container">
+          {/* Sidebar Form */}
+          <div className="sidebar">
+            <h2>DESIGN FORM</h2>
+    
+            {/* Background Upload */}
+            <div className="tool-section">
+              <label>
+                <FaUpload /> Background
+              </label>
+              <input type="file" onChange={handleFileUpload} />
+              <SketchPicker
+                color={background}
+                onChangeComplete={handleBackgroundChange}
+              />
+            </div>
+    
+            {/* Uploaded Files */}
+            <div className="tool-section">
+              <label>
+                <FaUpload /> Uploads
+              </label>
+              <div className="uploads-container">
+                {uploads.map((file, index) => (
+                  <div
+                    key={index}
+                    className="thumbnail-container"
+                    onContextMenu={(e) => handleRightClick(index, e)}
+                    draggable
+                    onDragStart={(e) => e.dataTransfer.setData("imageIndex", index)}
+                  >
+                    <img
+                      src={file}
+                      alt="Uploaded"
+                      className={`upload-thumbnail ${
+                        currentImageIndex === index ? "thumbnail-active" : ""
+                      }`}
+                      onClick={() => {
+                        setCurrentImageIndex(index);
+                        setBackgroundImage(file);
+                      }}
+                    />
+                  </div>
+                ))}
+              </div>
+            </div>
+    
+            {/* Text Customization */}
+            <div className="tool-section">
+              <label onClick={() => setShowTextOptions(!showTextOptions)}>
+                <FaTextHeight /> Text <FaChevronDown />
+              </label>
+              {showTextOptions && (
+                <div className="dropdown">
+                  {/* Text Input */}
+                  <input
+                    type="text"
+                    value={text}
+                    onChange={(e) => setText(e.target.value)}
+                    placeholder="Enter text..."
+                    style={{
+                      fontFamily: selectedFont,
+                      fontWeight:
+                        textStyle === "bold"
+                          ? "bold"
+                          : textStyle === "lighter"
+                          ? "lighter"
+                          : "normal",
+                      fontStyle:
+                        textStyle === "italic"
+                          ? "italic"
+                          : textStyle === "oblique"
+                          ? "oblique"
+                          : "normal",
+                      textDecoration:
+                        textStyle === "underline"
+                          ? "underline"
+                          : textStyle === "strikethrough"
+                          ? "line-through"
+                          : "none",
+                      textTransform:
+                        textStyle === "uppercase"
+                          ? "uppercase"
+                          : textStyle === "lowercase"
+                          ? "lowercase"
+                          : textStyle === "capitalize"
+                          ? "capitalize"
+                          : "none",
+                    }}
+                  />
+    
