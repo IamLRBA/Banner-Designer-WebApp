@@ -403,3 +403,173 @@ import {
             </div>
           </div>
         </div>
+
+        {/* Tools Section */}
+        <div className="tool-section">
+          <label onClick={() => setShowToolOptions(!showToolOptions)}>
+            <FaTools /> Tools <FaChevronDown />
+          </label>
+          {showToolOptions && (
+            <div className="dropdown">
+              {/* Drawing Tools */}
+              <label onClick={() => setShowDrawOptions(!showDrawOptions)}>
+                Drawing Tools <FaChevronDown />
+              </label>
+              {showDrawOptions && (
+                <div className="sub-dropdown">
+                  <div className="flex flex-wrap gap-2 mb-2">
+                    {["pen", "marker", "brush", "eraser"].map((tool) => (
+                      <button
+                        key={tool}
+                        onClick={() => setDrawingTool(tool)}
+                        className={`p-2 rounded ${
+                          drawingTool === tool ? "bg-blue-200" : "bg-gray-200"
+                        }`}
+                        title={tool.charAt(0).toUpperCase() + tool.slice(1)}
+                      >
+                        {tool === "pen" && <FaPen />}
+                        {tool === "marker" && <FaHighlighter />}
+                        {tool === "brush" && <FaPaintBrush />}
+                        {tool === "eraser" && <FaEraser />}
+                      </button>
+                    ))}
+                  </div>
+
+                  {drawingTool && drawingTool !== "eraser" && (
+                    <div className="mb-2">
+                      <label>Stroke Color:</label>
+                      <SketchPicker
+                        color={strokeColor}
+                        onChangeComplete={(color) => setStrokeColor(color.hex)}
+                      />
+                    </div>
+                  )}
+
+                  <div className="mb-2">
+                    <label>Stroke Width: {strokeWeight}px</label>
+                    <input
+                      type="range"
+                      min="1"
+                      max="50"
+                      value={strokeWeight}
+                      onChange={(e) =>
+                        setStrokeWeight(parseInt(e.target.value))
+                      }
+                    />
+                  </div>
+
+                  <div className="mb-2">
+                    <label>
+                      Transparency: {Math.round(strokeTransparency * 100)}%
+                    </label>
+                    <input
+                      type="range"
+                      min="0"
+                      max="1"
+                      step="0.1"
+                      value={strokeTransparency}
+                      onChange={(e) =>
+                        setStrokeTransparency(parseFloat(e.target.value))
+                      }
+                    />
+                  </div>
+
+                  <button
+                    onClick={() => {
+                      const canvas = document.querySelector("canvas");
+                      canvas
+                        ?.getContext("2d")
+                        .clearRect(0, 0, canvas.width, canvas.height);
+                    }}
+                    className="mt-2 p-2 bg-red-100 rounded"
+                  >
+                    Clear Drawings
+                  </button>
+                </div>
+              )}
+
+              {/* Elements */}
+              <label onClick={() => setShowElementOptions(!showElementOptions)}>
+                Elements <FaChevronDown />
+              </label>
+              {showElementOptions && (
+                <div className="sub-dropdown">
+                  <div className="tooltip-container">
+                    <button>
+                      <FaShapes />
+                    </button>
+                    <span className="tooltip">Shapes</span>
+                  </div>
+                  <div className="tooltip-container">
+                    <button>
+                      <FaGripLines />
+                    </button>
+                    <span className="tooltip">Lines</span>
+                  </div>
+                  <div className="tooltip-container">
+                    <button>
+                      <FaIcons />
+                    </button>
+                    <span className="tooltip">Icons</span>
+                  </div>
+                  <div className="tooltip-container">
+                    <button>
+                      <FaSmile />
+                    </button>
+                    <span className="tooltip">Stickers</span>
+                  </div>
+                </div>
+              )}
+
+              {/* Table Options */}
+              <label onClick={() => setShowTableOptions(!showTableOptions)}>
+                Table <FaChevronDown />
+              </label>
+              {showTableOptions && (
+                <div className="dropdown">
+                  <div className="tooltip-container">
+                    <button className="table-btn">
+                      <FaTable />
+                    </button>
+                    <span className="tooltip">Create</span>
+                  </div>
+                  <div className="dropdown-container">
+                    <div className="tooltip-container">
+                      <button
+                        className="table-btn"
+                        onClick={() => setShowAddOptions(!showAddOptions)}
+                      >
+                        <FaPlus />
+                      </button>
+                      <span className="tooltip">Add</span>
+                    </div>
+                    {showAddOptions && (
+                      <div className="sub-dropdown">
+                        <button>Add Row</button>
+                        <button>Add Column</button>
+                      </div>
+                    )}
+                  </div>
+                  <div className="dropdown-container">
+                    <div className="tooltip-container">
+                      <button
+                        className="table-btn"
+                        onClick={() => setShowRemoveOptions(!showRemoveOptions)}
+                      >
+                        <FaMinus />
+                      </button>
+                      <span className="tooltip">Remove</span>
+                    </div>
+                    {showRemoveOptions && (
+                      <div className="sub-dropdown">
+                        <button>Remove Row</button>
+                        <button>Remove Column</button>
+                      </div>
+                    )}
+                  </div>
+                </div>
+              )}
+            </div>
+          )}
+        </div>
+      </div>
