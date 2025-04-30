@@ -294,3 +294,39 @@ import {
                 <option value="initial">Initial</option>
                 <option value="inherit">Inherit</option>
               </select>
+
+              {/* Text Color Picker Dropdown */}
+              <div className="color-picker-container">
+                <label className="block mb-2 font-medium">Text Color</label>
+                <div className="flex items-center gap-2">
+                  <SketchPicker
+                    color={textColor}
+                    onChangeComplete={handleTextColorChange}
+                    presetColors={[
+                      "#000000",
+                      "#FFFFFF",
+                      "#FF0000",
+                      "#00FF00",
+                      "#0000FF",
+                      "#FFFF00",
+                      "#FF00FF",
+                      "#00FFFF",
+                      "#FFA500",
+                      "#800080",
+                      "#A52A2A",
+                      "#808080",
+                    ]}
+                    width="220px"
+                  />
+                  <button
+                    onClick={activateEyeDropper}
+                    className="eye-dropper-btn"
+                    title="Pick color from screen"
+                  >
+                    <FaEyeDropper size={20} />
+                  </button>
+                </div>
+              </div>
+            </div>
+          )}
+        </div>
