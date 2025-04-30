@@ -1,0 +1,28 @@
+/* ================ IMPORTS & SETUP ================ */
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Anton&family=Bebas+Neue&family=Georgia&family=Lato&family=Roboto&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ================ GLOBAL STYLES ================ */
+:root {
+  --primary-color: #405d67;
+  --secondary-color: #8baaad;
+  --accent-color: #31484f;
+}
+
+/* ================ BASE LAYOUT ================ */
+html,
+body,
+#root {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  font-family: "Roboto", sans-serif;
+  background: url("public/Images/default 12.jpg") no-repeat center center fixed;
+  background-size: cover;
+  position: fixed;
+}
