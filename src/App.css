@@ -26,3 +26,18 @@ body,
   background-size: cover;
   position: fixed;
 }
+
+/* ================ MAIN CONTAINERS ================ */
+.interactive-container {
+  margin-left: 560px;
+  margin-right: 100px;
+  margin-top: 30px;
+  width: 1210px;
+  height: 810px;
+  display: absolute;
+  align-items: center;
+  justify-content: center;
+  background: var(--primary-color);
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
