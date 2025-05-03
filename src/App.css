@@ -90,3 +90,49 @@ body,
   color: var(--primary-color);
   font-weight: bold;
 }
+
+/* Range Inputs */
+.control-group input[type="range"] {
+  width: 100%;
+  margin-bottom: 8px;
+  height: 6px;
+  background: var(--primary-color);
+  border-radius: 3px;
+  -webkit-appearance: none;
+  cursor: pointer;
+}
+
+.control-group input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 18px;
+  height: 18px;
+  background: var(--secondary-color);
+  border: 2px solid var(--primary-color);
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+/* Buttons */
+.button-group {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+}
+
+.button-group button {
+  background: var(--primary-color);
+  color: rgba(255, 255, 255, 0.723);
+  border: none;
+  border-radius: 4px;
+  padding: 4px 12px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button-group button:hover {
+  background: #2f444c;
+  transform: scale(1.1);
+}
