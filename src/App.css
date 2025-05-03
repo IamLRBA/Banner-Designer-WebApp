@@ -346,3 +346,36 @@ select {
     transform: scale(1);
   }
 }
+
+/* ================ COLOR PICKER ================ */
+.color-picker-container {
+  margin: 12px 0;
+}
+
+.eye-dropper-btn {
+  height: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f0f0f0;
+  border: 1px solid #ddd;
+}
+
+.sketch-picker {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2) !important;
+  border-radius: 8px !important;
+  position: relative !important;
+  z-index: 1000 !important;
+}
+
+.sketch-picker div[style*="flex-wrap: wrap"] {
+  padding: 8px 0 0 0 !important;
+}
+
+.sketch-picker div[style*="flex-wrap: wrap"] > div {
+  transition: transform 0.2s ease;
+}
+
+.sketch-picker div[style*="flex-wrap: wrap"] > div:hover {
+  transform: scale(1.1);
+}
