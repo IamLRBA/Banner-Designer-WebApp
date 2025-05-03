@@ -136,3 +136,36 @@ body,
   background: #2f444c;
   transform: scale(1.1);
 }
+
+/* ================ TOOL SECTIONS ================ */
+.tool-section {
+  background: var(--primary-color);
+  padding: 12px;
+  border-radius: 8px;
+  color: rgba(255, 255, 255, 0.74);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  transition: all 0.3s ease;
+}
+
+.tool-section:hover {
+  background: #cecece;
+  color: var(--primary-color);
+  transform: scale(1.1);
+}
+
+.tool-section label {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.tool-section label:hover {
+  transform: scale(1.05);
+  background: var(--primary-color);
+  color: white;
+  border-radius: 6px;
+}
