@@ -316,7 +316,7 @@ import {
                       "#A52A2A",
                       "#808080",
                     ]}
-                    width="220px"
+                    width="230px"
                   />
                   <button
                     onClick={activateEyeDropper}
