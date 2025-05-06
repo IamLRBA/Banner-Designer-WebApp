@@ -1,4 +1,4 @@
-# Interactive Banner Designer
+# Banner Designer App
 
 ---
 
