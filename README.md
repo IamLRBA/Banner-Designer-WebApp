@@ -2,7 +2,7 @@
 
 ---
 
-The Interactive Banner Designer is a Reactjs based responsive web application built by LRBA for creating custom banners with real-time previews, image uploads, and extensive styling options.
+The Banner Designer App is a Reactjs based responsive web application built by LRBA for creating custom banners with real-time previews, image uploads, and extensive styling options.
 
 ![Banner Designer Overview](https://raw.githubusercontent.com/AdelekeVanessa/Frontend-Web-App-for-Interactive-Banner-Design/main/public/Images/Interactive%20Banner%20Image.png)
 
