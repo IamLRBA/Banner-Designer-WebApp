@@ -108,7 +108,7 @@ Click the image above to download the demo video.
 
 ### Add Text:
 
-- Type your text in the input field
+- Type your text in the text input field
 - Choose from 40+ fonts
 - Customize color, style, and transformations
 
