@@ -1,3 +1,5 @@
+
+
 # Banner Designer App
 
 ---
@@ -58,7 +60,7 @@ Frontend-Web-App-for-Interactive-Banner-Design/
 │ ├── App.js # Root component
 │ └── index.js # Entry point
 ├── package.json # Project dependencies
-└── README.md # This file
+└── README.md # This file (Usage Instructions)
 
 ## Getting Started
 
