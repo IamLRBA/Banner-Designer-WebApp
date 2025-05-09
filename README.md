@@ -23,7 +23,7 @@ The Banner Designer App is a Reactjs based responsive web application built by L
   - Right-click to delete
 - **Drawing Tools**:
   - Pen, marker, brush, and eraser
-  - Adjustable stroke width and transparency
+  - Contains adjustable stroke width and transparency
 - **Responsive Design**: Works on various screen sizes
 - **Modern UI**: Intuitive interface with collapsible sections
 
@@ -35,8 +35,8 @@ The Banner Designer App is a Reactjs based responsive web application built by L
 
 - **React.js** (with Hooks)
 - **Framer Motion** (for animations)
-- **react-color** (color pickers)
-- **react-icons** (icon library)
+- **react-color** (for color pickers)
+- **react-icons** (for icon library)
 
 ### Styling
 
@@ -104,13 +104,13 @@ Click the image above to download the demo video.
 ### Customize Background:
 
 - Upload an image or choose a solid color
-- Adjust banner dimensions using sliders
+- Adjust banner dimensions using banner size control sliders
 
 ### Add Text:
 
 - Type your text in the text input field
 - Choose from 40+ fonts
-- Customize color, style, and transformations
+- Customize color, style and transformations
 
 ### Add Images:
 
