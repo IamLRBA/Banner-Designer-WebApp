@@ -169,7 +169,7 @@ Contributions are welcome! Please follow these steps:
 
 ## Contact
 
-**JERRY LARUBA FESTUS**
+**JERRY LARUBA FESTUS (LRBA)**
 
 Github: [@IamLRBA](https://github.com/IamLRBA)
 
