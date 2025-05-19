@@ -153,19 +153,19 @@ Contributions are welcome! Please follow these steps:
    ```bash
    git checkout -b feature/AmazingFeature
    ```
-3. Commit your changes
+3. **Commit your changes**
 
    ```bash
    git commit -m 'Add some amazing feature'
    ```
 
-4. Push to the branch
+4. **Push to the branch**
 
    ```bash
    git push origin feature/AmazingFeature
    ```
 
-5. Open a Pull Request
+5. **Open a Pull Request**
 
 ## Contact
 
