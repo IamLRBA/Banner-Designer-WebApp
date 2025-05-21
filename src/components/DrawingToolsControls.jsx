@@ -1,6 +1,6 @@
 import React from "react";
 import { SketchPicker } from "react-color";
-import { FaPen, FaHighlighter, FaPaintBrush, FaEraser } from "react-icons/fa";
+import { FaPen, FaHighlighter, FaPaintBrush, FaEraser, FaChevronDown } from "react-icons/fa";
 
 const DrawingToolsControls = ({
   drawingTool,
