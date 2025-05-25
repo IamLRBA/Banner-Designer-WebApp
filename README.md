@@ -1,6 +1,6 @@
 
 
-# Overview of the App
+# App Overview
 
 ---
 
