@@ -6,7 +6,7 @@
 
 The Banner Designer WebApp is a Reactjs based responsive web application built by LRBA for creating custom banners with interactive, real-time previews, image uploads and extensive styling options.
 
-The screenshot below shozs an overview
+The screenshot below shows an overview of the App:
 
 ![Banner Designer Overview](https://raw.githubusercontent.com/AdelekeVanessa/Frontend-Web-App-for-Interactive-Banner-Design/main/public/Images/Interactive%20Banner%20Image.png)
 
