@@ -4,7 +4,7 @@
 
 ---
 
-The Banner Designer WebApp is a Reactjs based responsive web application built by LRBA for FusionCRQFT Studios for creating custom banners with interactive, real-time previews, image uploads and extensive styling options.
+This Designer WebApp is a Reactjs based responsive web application built by LRBA for FusionCRQFT Studios for creating custom banners with interactive, real-time previews, image uploads and extensive styling options.
 
 The screenshot below shows an overview of the App:
 
